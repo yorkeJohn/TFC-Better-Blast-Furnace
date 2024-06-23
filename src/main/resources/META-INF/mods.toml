@@ -7,9 +7,7 @@ modId="tfcbetterbf"
 version="${file.jarVersion}"
 displayName="TFC Better Blast Furnace"
 authors="tadashi_3"
-description='''
-A TerraFirmaCraft addon that adds a more compact way to insulate your blast furnace.
-'''
+description='''A TerraFirmaCraft addon that adds a more compact way to insulate your blast furnace.'''
 
 [[dependencies.tfcbetterbf]]
     modId="tfc"

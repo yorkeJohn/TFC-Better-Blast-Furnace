@@ -36,13 +36,13 @@ public class Insulation extends Item {
         }
 
         final ItemStack stack = player.getItemInHand(ctx.getHand());
-        if (isBlock(block, FIRE_BRICKS.get())) {
-            level.setBlockAndUpdate(pos, INSULATED_FIRE_BRICKS.get().defaultBlockState());
-            stack.shrink(1);
-            playSound(level, pos, METAL_PLACE);
-            return sidedSuccess(level.isClientSide);
+        if (!isBlock(block, FIRE_BRICKS.get())) {
+            return PASS;
         }
 
-        return PASS;
+        level.setBlockAndUpdate(pos, INSULATED_FIRE_BRICKS.get().defaultBlockState());
+        stack.shrink(1);
+        playSound(level, pos, METAL_PLACE);
+        return sidedSuccess(level.isClientSide);
     }
 }

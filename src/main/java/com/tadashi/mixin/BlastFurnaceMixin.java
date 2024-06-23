@@ -21,15 +21,8 @@ import static net.dries007.tfc.util.Helpers.isBlock;
 @Mixin(BlastFurnaceBlock.class)
 public abstract class BlastFurnaceMixin {
 
-    @Accessor("BLAST_FURNACE_CHIMNEY")
-    private static MultiBlock getBlastFurnaceChimney() {
-        throw new AssertionError();
-    }
-
     private static final MultiBlock BLAST_FURNACE_CHIMNEY = getBlastFurnaceChimney();
-
     private static final MultiBlock INSULATED_CHIMNEY;
-
     private static final Predicate<BlockState> IS_INSULATED = b -> isBlock(b, INSULATED_FIRE_BRICKS.get());
 
     static {
@@ -39,6 +32,11 @@ public abstract class BlastFurnaceMixin {
                 .match(new BlockPos(0, 0, -1), IS_INSULATED)
                 .match(new BlockPos(1, 0, 0), IS_INSULATED)
                 .match(new BlockPos(-1, 0, 0), IS_INSULATED);
+    }
+
+    @Accessor("BLAST_FURNACE_CHIMNEY")
+    private static MultiBlock getBlastFurnaceChimney() {
+        throw new AssertionError();
     }
 
     @Inject(method = "getChimneyLevels", at = @At("HEAD"), cancellable = true)
