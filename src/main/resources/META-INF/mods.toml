@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion = "[47,)"
+license="BSD 3"
+
+[[mods]]
+modId="tfcbetterbf"
+version="${file.jarVersion}"
+displayName="TFC Better Blast Furnace"
+authors="tadashi_3"
+description='''
+A TerraFirmaCraft addon that adds a more compact way to insulate your blast furnace.
+'''
+
+[[dependencies.tfcbetterbf]]
+    modId="tfc"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+    [dependencies.tfcbetterbf.mc-publish]
+        ignore=false
+        modrinth="terrafirmacraft"
+        curseforge="terrafirmacraft"
+
+[[dependencies.tfcbetterbf]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.tfcbetterbf]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1, 1.20.2)"
+    ordering="NONE"
+    side="BOTH"

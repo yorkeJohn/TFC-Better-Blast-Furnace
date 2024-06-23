@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tfcbetterbf:block/insulated_fire_bricks"
+  }
+}
