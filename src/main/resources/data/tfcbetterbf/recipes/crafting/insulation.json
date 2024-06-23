@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    {
+      "item": "tfc:powder/flux"
+    }
+  ],
+  "result": {
+    "item": "tfcbetterbf:insulation"
+  }
+}
