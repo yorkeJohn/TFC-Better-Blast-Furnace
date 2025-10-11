@@ -9,7 +9,7 @@ plugins {
 
 // mod info
 def modId = "tfcbetterbf"
-def modVersion = "1.0.0"
+def modVersion = "1.0.1"
 
 // dependency versions
 def minecraftVersion = "1.20.1"
