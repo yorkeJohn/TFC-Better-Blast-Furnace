@@ -1,13 +1,5 @@
 package com.tadashi.item;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.NotNull;
-
 import static com.tadashi.Registry.INSULATED_FIRE_BRICKS;
 import static net.dries007.tfc.common.blocks.TFCBlocks.FIRE_BRICKS;
 import static net.dries007.tfc.util.Helpers.isBlock;
@@ -15,6 +7,15 @@ import static net.dries007.tfc.util.Helpers.playSound;
 import static net.minecraft.sounds.SoundEvents.METAL_PLACE;
 import static net.minecraft.world.InteractionResult.PASS;
 import static net.minecraft.world.InteractionResult.sidedSuccess;
+
+import org.jetbrains.annotations.NotNull;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.Level;
 
 public class Insulation extends Item {
 

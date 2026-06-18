@@ -4,8 +4,8 @@
     "item": "tfcbetterbf:insulation"
   },
   "result_fluid": {
-    "fluid": "tfc:metal/cast_iron",
-    "amount": 600
+    "amount": 600,
+    "id": "tfc:metal/cast_iron"
   },
-  "temperature": 1535
+  "temperature": 1535.0
 }
