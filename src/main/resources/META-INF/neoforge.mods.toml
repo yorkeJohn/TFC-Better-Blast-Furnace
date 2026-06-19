@@ -15,6 +15,17 @@ description = '''A TerraFirmaCraft addon that adds a more compact way to insulat
 config = "tfcbetterbf.mixins.json"
 
 [[dependencies.tfcbetterbf]]
+modId = "tfc"
+mandatory = true
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
+[dependencies.tfcbetterbf.mc-publish]
+ignore = false
+modrinth = "terrafirmacraft"
+curseforge = "terrafirmacraft"
+
+[[dependencies.tfcbetterbf]]
 modId = "neoforge"
 mandatory = true
 versionRange = "[21.1,)"
@@ -24,13 +35,6 @@ side = "BOTH"
 [[dependencies.tfcbetterbf]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.21.1,1.21.2)"
-ordering = "AFTER"
-side = "BOTH"
-
-[[dependencies.tfcbetterbf]]
-modId = "tfc"
-mandatory = true
-versionRange = "[4,)"
+versionRange = "[1.21.1]"
 ordering = "AFTER"
 side = "BOTH"
